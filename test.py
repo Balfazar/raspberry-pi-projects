@@ -1,7 +1,9 @@
 from gpiozero import LED
 from time import sleep
+
 led = LED(25)
-while True:
- led.on()
- sleep(1)
- led.off()
+
+led.on()   # Turn on LED
+sleep(2)   # Wait for 2 seconds
+led.off()  # Turn off LED
+sleep(2)   # Wait for 2 seconds to observe the result
