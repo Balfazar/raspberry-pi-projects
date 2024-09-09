@@ -3,7 +3,8 @@ from time import sleep
 
 led = LED(25)
 
-led.on()   # Turn on LED
-sleep(2)   # Wait for 2 seconds
-led.off()  # Turn off LED
-sleep(2)   # Wait for 2 seconds to observe the result
+while True:
+    led.on()   # Turn the LED on
+    sleep(1)   # Wait for 1 second
+    led.off()  # Turn the LED off
+    sleep(1)   # Wait for 1 second
